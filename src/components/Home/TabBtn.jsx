@@ -8,7 +8,7 @@ export default function TabBtn(props){
 
     return(
         <>
-            <li><button onClick={props.탭클릭}>{props.버튼명}</button></li>
+            <li><button className = {props.isSelected == true ? 'tabBtn_active' : null} onClick={props.탭클릭}>{props.버튼명}</button></li>
         </>
     );
 }
